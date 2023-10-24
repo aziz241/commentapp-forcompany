@@ -1,0 +1,144 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("saglamlogo.png"); }
+
+.header {
+  background-color: #fff;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center; }
+  .header__logo {
+    width: 50%; }
+    .header__logo--img {
+      height: 10vh; }
+  .header__adresses {
+    width: 50%; }
+    .header__adresses--heading {
+      text-transform: uppercase; }
+  .header__stargroup--star {
+    height: 3vh; }
+
+.content {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-direction: row; }
+  .content__comment {
+    margin: 1rem;
+    width: 40%;
+    height: 200px;
+    padding: 1.5rem;
+    background-color: #42bea0c2;
+    color: #000;
+    border-radius: 10px;
+    position: relative; }
+    .content__comment--img {
+      background-color: #fff;
+      display: inline-block;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      color: #000;
+      text-transform: uppercase;
+      position: relative; }
+      .content__comment--img--name {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+    .content__comment--name {
+      text-align: center;
+      position: absolute;
+      bottom: 0%;
+      right: 0%;
+      background-color: #ffffff6b;
+      overflow: hidden; }
+      .content__comment--name span {
+        margin: 1rem; }
+
+.bg-color {
+  background-color: #42bea0c2;
+  color: #000;
+  width: 100%;
+  text-align: center; }
+
+.clearfix {
+  content: "";
+  clear: both;
+  display: table; }
+
+.disabled {
+  display: none; }
+
+.gonder {
+  width: 100%;
+  display: inline-block;
+  margin-top: 1rem;
+  text-align: center; }
+
+.comment__group {
+  position: relative;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  align-content: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #252525;
+  transition: all 0.3s;
+  z-index: 999; }
+  .comment__group--formgroup {
+    width: 50%;
+    margin: auto; }
+  .comment__group label,
+  .comment__group input {
+    width: 100%; }
+  .comment__group .input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .comment__group__stars {
+    width: 100%;
+    padding: 1rem;
+    text-align: center; }
+    .comment__group__stars--star {
+      height: 1.5rem; }
+
+.form-control:focus {
+  box-shadow: none; }
+
+.footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #42bea0c2; }
+  .footer__name {
+    text-align: center; }
+    .footer__name a {
+      text-decoration: none;
+      color: blue; }
